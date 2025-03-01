@@ -37,7 +37,7 @@ def process_image(image):
         blurred = cv2.GaussianBlur(filtered, (3, 3), 0)
         
         # Edge Detection using Canny
-        edges = cv2.Canny(blurred, threshold1=30, threshold2=100)
+        edges = cv2.Canny(blurred, threshold1=10, threshold2=50)
         
         # Thinning Edges for a More Defined Sketch
         try:
